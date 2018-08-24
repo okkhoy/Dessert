@@ -10,6 +10,23 @@ public class IceCream {
         this.color = color;
         this.flavor = flavor;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getFlavor() {
+        return flavor;
+    }
+
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
+    }
+
     public static void main(String args[]) {
 
     }
