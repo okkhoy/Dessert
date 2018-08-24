@@ -89,5 +89,8 @@ public class IceCream {
 
         IceCream myChocolateIceCream = new IceCream("white", "chocolate");
         IceCream myCustomIceCream = new IceCream();
+        myChocolateIceCream.makeIceCream();
+        myChocolateIceCream.deliverIceCream();
+
     }
 }
