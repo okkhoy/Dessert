@@ -92,5 +92,9 @@ public class IceCream {
         myChocolateIceCream.makeIceCream();
         myChocolateIceCream.deliverIceCream();
 
+        myCustomIceCream.setColor("red");
+        myCustomIceCream.setFlavor("vanilla");
+        myCustomIceCream.makeIceCream();
+        myCustomIceCream.deliverIceCream();
     }
 }
