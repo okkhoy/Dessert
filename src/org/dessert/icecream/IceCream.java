@@ -103,5 +103,7 @@ public class IceCream {
         myCustomIceCream.setFlavor("vanilla");
         myCustomIceCream.makeIceCream();
         myCustomIceCream.deliverIceCream();
+
+        System.out.println("Total ice creams dispensed today: " + IceCream.getTotalIceCreams());
     }
 }
