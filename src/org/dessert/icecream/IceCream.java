@@ -33,5 +33,7 @@ public class IceCream {
 
     public static void main(String args[]) {
 
+        IceCream myChocolateIceCream = new IceCream("white", "chocolate");
+
     }
 }
