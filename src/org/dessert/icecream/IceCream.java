@@ -78,6 +78,13 @@ public class IceCream {
         return "Here you go: " + this.color + " colored, " + this.flavor + " flavored ice cream!\n";
     }
 
+    public void deliverIceCream() {
+        this.calculatePrice();
+        String iceCream = makeIceCream();
+        int price = this.getPrice();
+        System.out.println(iceCream + price);
+    }
+
     public static void main(String args[]) {
 
         IceCream myChocolateIceCream = new IceCream("white", "chocolate");
