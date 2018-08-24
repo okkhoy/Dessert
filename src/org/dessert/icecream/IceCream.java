@@ -35,7 +35,7 @@ public class IceCream {
         return price;
     }
 
-    public int calculatePrice() {
+    private void calculatePrice() {
         int price = 0;
 
         switch (color){
