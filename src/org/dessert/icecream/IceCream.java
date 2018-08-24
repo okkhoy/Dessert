@@ -38,6 +38,10 @@ public class IceCream {
         return price;
     }
 
+    public static int getTotalIceCreams() {
+        return totalIceCreams;
+    }
+
     private void calculatePrice() {
         int price = 0;
 
