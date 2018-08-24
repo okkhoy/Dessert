@@ -11,10 +11,11 @@ public class IceCream {
     IceCream(String color, String flavor) {
         this.color = color;
         this.flavor = flavor;
+        IceCream.totalIceCreams ++;
     }
 
     IceCream() {
-
+        IceCream.totalIceCreams ++;
     }
 
     public String getColor() {
