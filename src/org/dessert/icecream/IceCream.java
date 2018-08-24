@@ -11,6 +11,10 @@ public class IceCream {
         this.flavor = flavor;
     }
 
+    IceCream() {
+
+    }
+
     public String getColor() {
         return color;
     }
@@ -34,6 +38,6 @@ public class IceCream {
     public static void main(String args[]) {
 
         IceCream myChocolateIceCream = new IceCream("white", "chocolate");
-
+        IceCream myCustomIceCream = new IceCream();
     }
 }
