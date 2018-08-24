@@ -27,6 +27,10 @@ public class IceCream {
         this.flavor = flavor;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
     public static void main(String args[]) {
 
     }
