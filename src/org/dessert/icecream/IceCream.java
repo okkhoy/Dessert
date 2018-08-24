@@ -6,6 +6,8 @@ public class IceCream {
     private String flavor;
     private int price;
 
+    private static int totalIceCreams = 0;
+
     IceCream(String color, String flavor) {
         this.color = color;
         this.flavor = flavor;
