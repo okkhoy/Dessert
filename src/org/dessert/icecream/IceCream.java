@@ -1,5 +1,7 @@
 package org.dessert.icecream;
 
+import java.util.ArrayList;
+
 public class IceCream {
 
     private String color;
@@ -7,6 +9,7 @@ public class IceCream {
     private int price;
 
     private static int totalIceCreams = 0;
+    private static ArrayList<IceCream> soldIceCreams = new ArrayList<>();
 
     IceCream(String color, String flavor) {
         this.color = color;
