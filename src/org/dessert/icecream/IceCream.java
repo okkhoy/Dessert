@@ -70,42 +70,7 @@ public class IceCream {
     }
 
     private void calculatePrice() {
-        int price = 0;
-
-        switch (color){
-            case "red":
-                price = 10;
-                break;
-            case "green":
-                price = 15;
-                break;
-            case "blue":
-                price = 5;
-                break;
-            case "white":
-                price = 20;
-                break;
-            default:
-                price = 25;
-                break;
-        }
-
-        switch (flavor) {
-            case "vanilla":
-                price += 5;
-                break;
-            case "strawberry":
-                price += 10;
-                break;
-            case "chocolate":
-                price += 15;
-                break;
-            default:
-                price += 20;
-                break;
-        }
-
-        this.price = price;
+        this.price = priceList.get(this.color) + priceList.get(this.flavor);
     }
 
     public String makeIceCream() {
