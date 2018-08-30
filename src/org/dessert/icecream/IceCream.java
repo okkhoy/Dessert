@@ -9,7 +9,7 @@ public class IceCream {
     private int price;
 
     private static int totalIceCreams = 0;
-    private static ArrayList<IceCream> soldIceCreams = new ArrayList<>();
+    private static ArrayList<IceCream> soldIceCreams = new ArrayList<>();  // << no size specified
 
     IceCream(String color, String flavor) {
         this.color = color;
@@ -94,7 +94,7 @@ public class IceCream {
         int price = this.getPrice();
         System.out.println(iceCream + price);
 
-        soldIceCreams.add(this);
+        soldIceCreams.add(this);  // << just keep adding, and soldIceCreams expands to accommodate
     }
 
     @Override
