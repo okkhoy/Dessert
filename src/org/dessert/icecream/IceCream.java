@@ -12,12 +12,23 @@ public class IceCream {
     private static HashMap<String, Integer> priceList = new HashMap<String, Integer>();
 
     IceCream(String color, String flavor) {
-        this.color = color;
-        this.flavor = flavor;
+        if (priceList.containsKey(color)) {
+            this.color = color;
+        } else {
+            this.color = "custom color";
+        }
+
+        if (priceList.containsKey(flavor)) {
+            this.flavor = flavor;
+        } else {
+            this.flavor = "custom flavor";
+        }
         IceCream.totalIceCreams ++;
     }
 
     IceCream() {
+        this.color = "custom color";
+        this.flavor = "custom flavor";
         IceCream.totalIceCreams ++;
     }
 
