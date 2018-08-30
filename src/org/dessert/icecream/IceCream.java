@@ -93,14 +93,20 @@ public class IceCream {
         String iceCream = makeIceCream();
         int price = this.getPrice();
         System.out.println(iceCream + price);
+
+        soldIceCreams.add(this);
     }
 
     public static void main(String args[]) {
+
+        System.out.println("Before selling items :" + IceCream.soldIceCreams);
 
         IceCream myChocolateIceCream = new IceCream("white", "chocolate");
         IceCream myCustomIceCream = new IceCream();
         myChocolateIceCream.makeIceCream();
         myChocolateIceCream.deliverIceCream();
+
+        System.out.println("After selling choc. ice cream :" + IceCream.soldIceCreams);
 
         myCustomIceCream.setColor("red");
         myCustomIceCream.setFlavor("vanilla");
@@ -108,5 +114,7 @@ public class IceCream {
         myCustomIceCream.deliverIceCream();
 
         System.out.println("Total ice creams dispensed today: " + IceCream.getTotalIceCreams());
+
+        System.out.println("After selling custom ice cream :" + IceCream.soldIceCreams);
     }
 }
