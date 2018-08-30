@@ -45,6 +45,19 @@ public class IceCream {
         return totalIceCreams;
     }
 
+    public static void setPriceList() {
+        System.out.println("===== Opening shop and setting today's prices =====");
+        priceList.put("red", 10);
+        priceList.put("green", 15);
+        priceList.put("blue", 5);
+        priceList.put("custom color", 25);
+
+        priceList.put("vanilla", 5);
+        priceList.put("chocolate", 15);
+        priceList.put("strawberry", 10);
+        priceList.put("custom flavor", 20);
+    }
+
     private void calculatePrice() {
         int price = 0;
 
@@ -96,6 +109,7 @@ public class IceCream {
     }
 
     public static void main(String args[]) {
+        IceCream.setPriceList();
 
         IceCream myChocolateIceCream = new IceCream("white", "chocolate");
         IceCream myCustomIceCream = new IceCream();
