@@ -1,5 +1,7 @@
 package org.dessert.icecream;
 
+import java.util.HashMap;
+
 public class IceCream {
 
     private String color;
@@ -7,6 +9,7 @@ public class IceCream {
     private int price;
 
     private static int totalIceCreams = 0;
+    private static HashMap<String, Integer> priceList = new HashMap<String, Integer>();
 
     IceCream(String color, String flavor) {
         this.color = color;
