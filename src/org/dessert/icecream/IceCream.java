@@ -97,6 +97,11 @@ public class IceCream {
         soldIceCreams.add(this);
     }
 
+    @Override
+    public String toString() {
+        return "Color: " + this.getColor() + "| Flavor: " + this.getFlavor() + "| Price: " + this.getPrice();
+    }
+
     public static void main(String args[]) {
 
         System.out.println("Before selling items :" + IceCream.soldIceCreams);
